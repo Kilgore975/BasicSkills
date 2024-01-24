@@ -1,0 +1,28 @@
+#!/bin/bash
+#Chris 1/2024
+#If Then
+
+clear
+echo
+echo What is your name?
+echo
+read name
+echo
+ 
+echo Hello $name
+echo
+
+echo Are you having a good day?
+read good
+echo
+
+if [ "$good" == y ]
+then 
+ echo "That's good to hear! I'm happy for you!"
+echo
+
+elif [ "$good" == n ]
+then 
+ echo "That's sad to hear. I hope it gets better from here!"
+echo
+fi
