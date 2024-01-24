@@ -1,0 +1,17 @@
+#!/bin/bash
+#Chris 1/2024
+#dowhile loop
+
+num=10
+while [ $num -gt 0 ]
+do
+	echo
+	echo $num seconds left to stop this process 
+	echo
+	sleep 1
+
+num=`expr $num - 1`
+done
+echo
+echo process is stopped!!!
+echo
