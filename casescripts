@@ -1,0 +1,27 @@
+#!/bin/bash
+#Chris 1/2024
+#Case Script
+
+echo
+echo Please select one of the options below.
+echo
+echo 'a = Display Date'
+echo 'b = List Directory Content'
+echo 'c = List Logged in Users'
+echo 'd = Check System Uptime'
+echo 'e = Present Working Directory'
+echo 'f = Start Calculator'
+echo 'g = Check Word Count of File'
+echo 
+	read choices
+	case $choices in
+a) date;;
+b) ls -ltr;;
+c) who;;
+d) uptime;;
+e) pwd;;
+f) bc;;
+g) wc -l casescripts;;
+*) echo Invalid choice - Bye.
+
+esac
